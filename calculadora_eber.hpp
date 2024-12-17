@@ -4,32 +4,6 @@
 
 #include "calculadora.hpp"
 
-class TelaEber: public Tela{
-public:
-    void adicione(Digito digito);
-    void limpe();
-    void definaSinal(Sinal);
-    void definaSeparadorDecimal();
-};
-
-class CpuEber: public Cpu
-{
-    Tela *tela;
-public:
-    void definaCpu(Cpu*);
-    Cpu* obtenhaCpu();
-};
-
-class TeclaEber: public Tecla
-{
-Teclado *teclado;
-public:
-    void pressione() ;
-
-    void definaTeclado(Teclado*);
-    Teclado* obtenhaTeclado();
-};
-
 class CalculadoraEber: public Calculadora
 {
     Tela *tela;

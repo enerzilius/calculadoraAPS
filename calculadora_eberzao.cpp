@@ -4,36 +4,17 @@
 
 #include "calculadora_eber.hpp"
 
-void TelaEber::adicione(Digito digito) {
-    switch (digito) {
-    case ZERO:
-      std::cout << "0000\n0  0\n0  0\n0  0\n0000\n";
-      break;
-    case UM:
-      std::cout << "  1 \n 11 \n  1 \n  1 \n1111\n";
-      break;
+// void TecladoLucio::definaUcp(Ucp *ucp) { this->ucp = ucp; }
+// Ucp* TecladoLucio::obtenhaUcp() { return this->ucp; }
 
-    default:
-      std::cout << "Dígito ainda não implementado!\n";
-    }
-  }
+// void UcpLucio::definaTela(Tela *tela) { this->tela = tela; }
+// Tela *UcpLucio::obtenhaTela() { return this->tela; }
 
-void TelaEber::limpe() { std::cout << "\n\n\n\n\n" }
+// void CalculadoraLucio::definaTela(Tela *tela) { this->tela = tela; }
+// Tela *CalculadoraLucio::obtenhaTela() { return this->tela; }
 
-void TelaEber::definaSinal(Sinal sinal){
-    std::cout(sinal==NEGATIVO?'-------\n':'')    
-}
-void TelaEber::definaSeparadorDecimal(){
-    std::cout << "::\n";
-}
-void TelaEber::definaTela() {}
+// void CalculadoraLucio::definaUcp(Ucp *ucp) { this->ucp = ucp; }
+// Ucp *CalculadoraLucio::obtenhaUcp() { return this->ucp; }
 
-void TeclaEber::pressione() {}
-
-Teclado* TecladoEber::obtenhaTeclado(){}
-void TecladoEber::definaTeclado(){}
-void TecladoEber::adicioneTecla(Tecla &tecla) { teclas.push_back(&tecla); }
-
-void CpuEber::definaCpu(Cpu &cpu) {}
-
-Cpu* CpuEber::obtenhaCpu() {}
+// void CalculadoraLucio::definaTeclado(Teclado *teclado) { this->teclado = teclado; }
+// Teclado *CalculadoraLucio::obtenhaTeclado() { return this->teclado; }
